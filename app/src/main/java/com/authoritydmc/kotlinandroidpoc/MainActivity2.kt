@@ -3,16 +3,16 @@ package com.authoritydmc.kotlinandroidpoc
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.authoritydmc.kotlinandroidpoc.databinding.ActivityMainBinding
+import com.authoritydmc.kotlinandroidpoc.databinding.ActivityMain2Binding
 
-class MainActivity : AppCompatActivity() {
+class MainActivity2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val binding = ActivityMainBinding.inflate(layoutInflater)
+        val binding = ActivityMain2Binding.inflate(layoutInflater)
         setContentView(binding.root)
 
         binding.button.setOnClickListener {
-            startActivity(Intent(this@MainActivity, MainActivity2::class.java))
+            startActivity(Intent(this@MainActivity2, MainActivity::class.java))
         }
     }
 }
